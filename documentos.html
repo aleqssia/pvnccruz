@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <title>Cadastro Aluno</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+    </head>
+<body style="background-color:white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler grad" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse main-menu-item justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cource.html">Material</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cadastre-se
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#single-blog.html">Seja Aluno</a>
+                        <a class="dropdown-item" href="#elements.html">Seja Professor</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a class="btn gradbt" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container" id="tcontainer" style="background-color: #F8F9FA; -moz-border-radius:7px;-webkit-border-radius:7px; border-radius:20px; box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);">
+<form id="form" action="dados.html" method="POST">
+   <br>
+<h4 style="color: #F26003">Documentos</h4>
+<hr />
+<b>Atenção: Inserir foto ou xerox legível dos documentos solicitados.</b><br>
+Carteira de trabalho de todos os <b>maiores de 18 anos.*</b>
+<br><br>
+<table class="table" style="background-color: #F8F9FA">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Carteira de Trabalho</th>
+      <th scope="col">CPF</th>
+      <th scope="col">RG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" class="form-control" id="nome1"></td>
+      <td><input type="file"  id="teste" name="carteira1" id="carteira1" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="cpf1" id="cpf1" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="rg1" id="rg1" style="max-width:260px;"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="form-control" id="nome2"></td>
+      <td><input type="file"  id="teste" name="carteira2" id="carteira2" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="cpf2" id="cpf2" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="rg2" id="rg2" style="max-width:260px;"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="form-control" id="nome3"></td>
+      <td><input type="file"  id="teste" name="carteira3" id="carteira3" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="cpf3" id="cpf3" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="rg3" id="rg3" style="max-width:260px;"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="form-control" id="nome4"></td>
+      <td><input type="file"  id="teste" name="carteira4" id="carteira4" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="cpf4" id="cpf4" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="rg4" id="rg4" style="max-width:260px;"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="form-control" id="nome5"></td>
+      <td><input type="file"  id="teste" name="carteira5" id="carteira5" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="cpf5" id="cpf5" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="rg5" id="rg5" style="max-width:260px;"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="form-control" id="nome6"></td>
+      <td><input type="file"  id="teste" name="carteira6" id="carteira6" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="cpf6" id="cpf6" style="max-width:260px;"></td>
+      <td><input type="file"  id="teste" name="rg6" id="rg6" style="max-width:260px;"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2>Comprovante de Residência</h2>
+<input type="file" class="form-control" id="residencia">
+<br>
+<h2>Comprovante de Escolaridade</h2>
+<input type="file" class="form-control" id="comprovantee">
+<br>
+<h2>Declaração de Renda</h2>
+<input type="file" class="form-control" id="renda">
+Último contracheque, contrato, ou declaração a proprio punho alegando a função que exerce e quanto ganha ou alegando desemprego. <b>Datada e assinada.</b>
+<br><br>
+<h2>Agendamento Entrevista</h2>
+<select class="custom-select" id="entrevista">
+    <option value="Ensino Fundamental">DATAS</option>
+    <option value="Ensino Fundamental">DATAS</option>
+    </select>
+<br><br>
+  <div id="button">
+<button type="submit" class="btn gradbt">Cadastrar</button>
+</div>
+<br>
+</form>
+</div>
+<br>
+<script type="text/javacript" src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

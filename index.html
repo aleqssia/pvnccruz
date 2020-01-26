@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <title>Cadastro Aluno</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+    </head>
+<body style="background-color:white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler grad" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse main-menu-item justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cource.html">Material</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cadastre-se
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#single-blog.html">Seja Aluno</a>
+                        <a class="dropdown-item" href="#elements.html">Seja Professor</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a class="btn gradbt" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container" id="tcontainer" style="background-color: #F8F9FA; -moz-border-radius:7px;-webkit-border-radius:7px; border-radius:20px; box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);">
+<form id="form" action="dados.html" method="POST">
+   <br>
+<h4 style="color: #F26003">Cadastrar Aluno - Dados Pessoais</h4>
+<hr />
+  <div class="form-group">
+    <div class="row">
+        <div class="col">
+            <h2>Nome Completo</h2>
+          <input type="text" class="form-control" id="nome" placeholder="Nome Completo" required>
+        </div>
+        <div class="col">
+            <h2>Data de Nascimento</h2>
+          <input type="date" class="form-control" id="data" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col">
+                <h2>Endereço</h2>
+              <input type="text" class="form-control" id="endereco" placeholder="Endereço" required>
+            </div>
+            <div class="col">
+                <h2>Bairro</h2>
+              <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+            </div>
+          </div>
+        </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col">
+                <h2>Telefone</h2>
+              <input type="tel" class="form-control" id="telefone" placeholder="(00) 0000-00000" onkeypress="$(this).mask('(00) 0000-00009')" required>
+            </div>
+            <div class="col">
+                <h2>Celular</h2>
+              <input type="tel" class="form-control" id="celular" placeholder="(00) 0000-00000" onkeypress="$(this).mask('(00) 0000-00009')" required>
+            </div>
+          </div>
+        </div>
+
+            <div class="form-group">
+                <h2>E-mail</h2>
+                <input type="email" class="form-control" name="email" id="email" placeholder="meuemail@meuemail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Senha</h2>
+                          <input type="password" class="form-control" id="senha"required>
+                        </div>
+                        <div class="col">
+                            <h2>Confirmar senha</h2>
+                          <input type="password" class="form-control" id="confirma" required>
+                        </div>
+                      </div>
+                    </div>
+
+            <h2>Curso pretendido no vestibular</h2>
+            <div class="form-group">
+            <select class="custom-select" id="curso">
+                <option selected>Curso</option>
+                <option value="Administração">Administração</option>
+                <option value="Agronomia">Agronomia</option>
+                <option value="Arqueologia">Arqueologia</option>
+                <option value="Alimentos">Alimentos</option>
+                <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                <option value="Análises Clínicas">Análises Clínicas</option>
+                <option value="Arquitetura e Urbanismo">Arquitetura e Urbanismo</option>
+                <option value="Arquivologia">Arquivologia</option>
+                <option value="Artes">Artes</option>
+                <option value="Artes Cênicas">Artes Cênicas</option>
+                <option value="Artes Gráficas">Artes Gráficas</option>
+                <option value="Artes Plásticas">Artes Plásticas</option>
+                <option value="Artes Visuais">Artes Visuais</option>
+                <option value="Biblioteconomia">Biblioteconomia</option>
+                <option value="Biomedicina">Biomedicina</option>
+                <option value="Ciência da Computação">Ciência da Computação</option>
+                <option value="Ciências Biológicas">Ciências Biológicas</option>
+                <option value="Ciências Atuariais">Ciências Atuariais</option>
+                <option value="Ciências Contábeis">Ciências Contábeis</option>
+                <option value="Ciências Econômicas">Ciências Econômicas</option>
+                <option value="Ciências Naturais">Ciências Naturais</option>
+                <option value="Ciências Sociais">Ciências Sociais</option>
+                <option value="Cinema e Audiovisual">Cinema e Audiovisual</option>
+                <option value="Dança">Dança</option>
+                <option value="Design">Design</option>
+                <option value="Design Gráfico">Design Gráfico</option>
+                <option value="Direito">Direito</option>
+                <option value="Educação Física">Educação Física</option>
+                <option value="Enfermagem">Enfermagem</option>
+                <option value="Engenharia Aeronáutica">Engenharia Aeronáutica</option>
+                <option value="Engenharia Agrícola">Engenharia Agrícola</option>
+                <option value="Engenharia Ambiental e Sanitária">Engenharia Ambiental e Sanitária</option>
+                <option value="Engenharia Cartográfica e de Agrimensura">Engenharia Cartográfica e de Agrimensura</option>
+                <option value="Engenharia Civil">Engenharia Civil</option>
+                <option value="Engenharia de Alimentos">Engenharia de Alimentos</option>
+                <option value="Engenharia de Bioprocessos">Engenharia de Bioprocessos</option>
+                <option value="Engenharia de Computação">Engenharia de Computação</option>
+                <option value="Engenharia de Controle e Automação">Engenharia de Controle e Automação</option>
+                <option value="Engenharia de Materiais">Engenharia de Materiais</option>
+                <option value="Engenharia de Minas">Engenharia de Minas</option>
+                <option value="Engenharia de Pesca">Engenharia de Pesca</option>
+                <option value="Engenharia de Petróleo">Engenharia de Petróleo</option>
+                <option value="Engenharia de Produção">Engenharia de Produção</option>
+                <option value="Engenharia de Telecomunicações">Engenharia de Telecomunicações</option>
+                <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                <option value="Engenharia Eletrônica">Engenharia Eletrônica</option>
+                <option value="Engenharia Florestal">Engenharia Florestal</option>
+                <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                <option value="Engenharia Metalúrgica">Engenharia Metalúrgica</option>
+                <option value="Engenharia Naval">Engenharia Naval</option>
+                <option value="Engenharia Nuclear">Engenharia Nuclear</option>
+                <option value="Engenharia Quí­mica">Engenharia Quí­mica</option>
+                <option value="Engenharia Têxtil">Engenharia Têxtil</option>
+                <option value="Estatística">Estatística</option>
+                <option value="Farmácia">Farmácia</option>
+                <option value="Filosofia">Filosofia</option>
+                <option value="Fí­sica">Fí­sica</option>
+                <option value="Fisioterapia">Fisioterapia</option>
+                <option value="Fonoaudiologia">Fonoaudiologia</option>
+                <option value="Geografia">Geografia</option>
+                <option value="Geologia">Geologia</option>
+                <option value="História">História</option>
+                <option value="Informática">Informática</option>
+                <option value="Jornalismo">Jornalismo</option>
+                <option value="Letras Língua Estrangeira">Letras Língua Estrangeira</option>
+                <option value="Letras Lí­ngua Portuguesa">Letras Lí­ngua Portuguesa</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Medicina">Medicina</option>
+                <option value="Medicina Veterinária">Medicina Veterinária</option>
+                <option value="Meteorologia">Meteorologia</option>
+                <option value="Museologia">Museologia</option>
+                <option value="Música">Música</option>
+                <option value="Nutrição">Nutrição</option>
+                <option value="Odontologia">Odontologia</option>
+                <option value="Pedagogia">Pedagogia</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Publicidade e Propaganda">Publicidade e Propaganda</option>
+                <option value="Química">Química</option>
+                <option value="Rádio, TV, Internet">Rádio, TV, Internet</option>
+                <option value="Relações Internacionais">Relações Internacionais</option>
+                <option value="Relações Públicas">Relações Públicas</option>
+                <option value="Secretariado">Secretariado</option>
+                <option value="Serviço Social">Serviço Social</option>
+                <option value="Sistemas da Informação">Sistemas da Informação</option>
+                <option value="Teatro">Teatro</option>
+                <option value="Teologia">Teologia</option>
+                <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+                <option value="Turismo">Turismo</option>
+                <option value="Zootecnia">Zootecnia</option>
+              </select>
+            </div>
+            <h2>Foto 3x4</h2>
+            <div class="form-group">
+              <input type="file"  id="teste" name="foto" id="foto" required>
+            </div>
+            <h2>Declaração</h2>
+            <textarea id="story" name="story" rows="5" cols="33" class="form-control"  disabled style="height:70px;">
+              Eu declaro para os devidos fins que as informações por mim prestadas neste formulário de inscrição são a expressão da verdade.  Demonstra-me ciência que na verificação de meus dados casos venha a ocorrer alguma invalidade, estarei sumariamente eliminado de qualquer processo seletivo deste Pré-Vestibular Comunitário do corrente ano. Tomo ciência de que o não cumprimento das normas e regras imposta pelo PVNC, estarei eliminado do grupo.
+              </textarea>
+              <br>
+  <div id="button">
+<button type="submit" class="btn gradbt">Cadastrar</button>
+</div>
+<br>
+</form>
+</div>
+<br>
+<script type="text/javacript" src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

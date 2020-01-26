@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <title>Cadastro Aluno</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script type="text/javacript" src="bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+    </head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler grad" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse main-menu-item justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cource.html">Material</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cadastre-se
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#single-blog.html">Seja Aluno</a>
+                        <a class="dropdown-item" href="#elements.html">Seja Professor</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a class="btn gradbt" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container" id="tcontainer" style="background-color: #F8F9FA; -moz-border-radius:7px;-webkit-border-radius:7px; border-radius:20px; box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);">
+<form id="form" action="#" method="POST">
+    <br>
+<h4 style="color: #F26003">Características Gerais</h4>
+<hr />
+              <h2>Concluiu o Ensino Médio?</h2>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1" onclick="document.getElementById('ano').disabled = false;">Sim</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2" onclick="document.getElementById('ano').disabled = true;">Não</label>
+              </div>
+              <div class="form-group col-md-2">
+                <h2>Ano de término</h2>
+                <input type="text" class="form-control" id="ano" disabled>
+            </div>
+
+  <h2>Qual seu tipo de curso?</h2>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input">
+    <label class="custom-control-label" for="customRadio3" onclick="document.getElementById('qual').disabled = true;">Formação Geral</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
+    <label class="custom-control-label" for="customRadio4" onclick="document.getElementById('qual').disabled = true;">Formação de professores (normal)</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="customRadio5" name="customRadio2" class="custom-control-input">
+    <label class="custom-control-label" for="customRadio5" onclick="document.getElementById('qual').disabled = false;">Formação técnica</label>
+  </div>
+  <div class="form-group col-md-2">
+    <h2>Qual?</h2>
+    <input type="text" class="form-control" id="qual" disabled>
+</div>
+      <h2>A escola era?</h2>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio6" name="customRadio3" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio6" onclick="document.getElementById('bolsa').disabled = true;">Pública</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio7" name="customRadio3" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio7" onclick="document.getElementById('bolsa').disabled = true;">Particular sem bolsa</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio8" name="customRadio3" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio8" onclick="document.getElementById('bolsa').disabled = false;">Particular com bolsa</label>
+      </div>
+      <div class="form-group col-md-2">
+        <h2>Porcentagem da bolsa</h2>
+        <input type="text" class="form-control" id="bolsa" disabled>
+    </div>
+      <h2>De acordo com as definições étnicas (cor ou raça) do IBGE, como você define sua cor?</h2>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio9" name="customRadio4" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio9">Preto</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio10" name="customRadio4" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio10">Pardo</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio11" name="customRadio4" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio11"> Branco</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio12" name="customRadio4" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio12">Amarelo/oriental</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio13" name="customRadio4" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio13">Indígena</label>
+      </div>
+<br>
+      <h2>Por que deseja estudar no PVNC- Núcleo Santa Cruz da Serra?</h2>
+      <!-- Default unchecked -->
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+        <label class="custom-control-label" for="defaultUnchecked">Proximidade de casa</label>
+      </div>
+
+      <div class="my-2"></div>
+
+      <!-- Default checked -->
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultChecked">
+        <label class="custom-control-label" for="defaultChecked">Meus amigos vão estudar aqui</label>
+      </div>
+
+      <div class="my-2"></div>
+
+      <!-- Default indeterminate -->
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultIndeterminate">
+        <label class="custom-control-label" for="defaultIndeterminate">Não posso pagar um curso particular</label>
+      </div>
+
+      <div class="my-2"></div>
+
+      <!-- Default unchecked disabled -->
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultUncheckedDisabled">
+        <label class="custom-control-label" for="defaultUncheckedDisabled" onclick="document.getElementById('quais').disabled = false;">Outros</label>
+      </div>
+      
+              <div class="form-group col-md-2">
+                <h2>Quais?</h2>
+                <input type="text" class="form-control" id="quais" disabled>
+              </div>
+                <h2>Já fez parte de outro núcleo do PVNC?</h2>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio14" name="customRadio5" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio14" onclick="document.getElementById('desligou').disabled = false;">Sim</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio15" name="customRadio5" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio15" onclick="document.getElementById('desligou').disabled = true;">Não</label>
+              </div>
+              <div class="form-group col-md-2">
+                <h2>Em qual e por que se desligou?</h2>
+                <input type="text" class="form-control" id="desligou" disabled>
+            </div>
+                  <br>
+                  <h4 style="color: #F26003">Quadro socioeconômico familiar</h4>
+                  <table class="table" style="background-color: #F8F9FA">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Idade</th>
+                        <th scope="col">Parentesco</th>
+                        <th scope="col">Atividade Profissional</th>
+                        <th scope="col">Escolaridade</th>
+                        <th scope="col">Renda mensal (Bruto)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="text" class="form-control" id="nome1"></td>
+                        <td><input type="text" class="form-control" id="idade1" style="max-width:50px;"></td>
+                        <td><input type="text" class="form-control" id="parentesco1" placeholder="O próprio" disabled></td>
+                        <td><input type="text" class="form-control" id="profissional1"></td>
+                        <td>
+                          <select class="custom-select" id="escolaridade1">
+                          <option value="Ensino Fundamental">Sem Escolaridade</option>
+                          <option value="Ensino Fundamental">Ensino Fundamental Incompleto</option>
+                          <option value="Ensino Fundamental">Ensino Fundamental Completo</option>
+                          <option value="Ensino Fundamental">Ensino Médio Incompleto</option>
+                          <option value="Ensino Fundamental">Ensino Médio Completo</option>
+                          <option value="Ensino Fundamental">Ensino Superior Incompleto</option>
+                          <option value="Ensino Fundamental">Ensino Superior Completo</option>
+                          <option value="Ensino Fundamental">Pós-Graduação</option>
+                          </option>
+                        </td>
+                        <td><input type="text" class="form-control" id="renda1" style="max-width:100px;"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="nome2"></td>
+                        <td><input type="text" class="form-control" id="idade2" style="max-width:50px;"></td>
+                        <td><input type="text" class="form-control" id="parentesco2"></td>
+                        <td><input type="text" class="form-control" id="profissional2"></td>
+                        <td>
+                          <select class="custom-select" id="escolaridade2">
+                            <option value="Ensino Fundamental">Sem Escolaridade</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Completo</option>
+                            <option value="Ensino Fundamental">Ensino Médio Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Médio Completo</option>
+                            <option value="Ensino Fundamental">Ensino Superior Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Superior Completo</option>
+                            <option value="Ensino Fundamental">Pós-Graduação</option>
+                            </option>
+                        </td>
+                        <td><input type="text" class="form-control" id="renda2" style="max-width:100px;"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="nome3"></td>
+                        <td><input type="text" class="form-control" id="idade3" style="max-width:50px;"></td>
+                        <td><input type="text" class="form-control" id="parentesco3"></td>
+                        <td><input type="text" class="form-control" id="profissional3"></td>
+                        <td>
+                          <select class="custom-select" id="escolaridade3">
+                            <option value="Ensino Fundamental">Sem Escolaridade</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Completo</option>
+                            <option value="Ensino Fundamental">Ensino Médio Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Médio Completo</option>
+                            <option value="Ensino Fundamental">Ensino Superior Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Superior Completo</option>
+                            <option value="Ensino Fundamental">Pós-Graduação</option>
+                            </option>
+                        </td>
+                        <td><input type="text" class="form-control" id="renda3" style="max-width:100px;"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="nome4"></td>
+                        <td><input type="text" class="form-control" id="idade4" style="max-width:50px;"></td>
+                        <td><input type="text" class="form-control" id="parentesco4"></td>
+                        <td><input type="text" class="form-control" id="profissional4"></td>
+                        <td>
+                          <select class="custom-select" id="escolaridade4">
+                            <option value="Ensino Fundamental">Sem Escolaridade</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Completo</option>
+                            <option value="Ensino Fundamental">Ensino Médio Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Médio Completo</option>
+                            <option value="Ensino Fundamental">Ensino Superior Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Superior Completo</option>
+                            <option value="Ensino Fundamental">Pós-Graduação</option>
+                            </option>
+                        </td>
+                        <td><input type="text" class="form-control" id="renda4" style="max-width:100px;"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="nome5"></td>
+                        <td><input type="text" class="form-control" id="idade5" style="max-width:50px;"></td>
+                        <td><input type="text" class="form-control" id="parentesco5"></td>
+                        <td><input type="text" class="form-control" id="profissional5"></td>
+                        <td>
+                          <select class="custom-select" id="escolaridade5">
+                            <option value="Ensino Fundamental">Sem Escolaridade</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Completo</option>
+                            <option value="Ensino Fundamental">Ensino Médio Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Médio Completo</option>
+                            <option value="Ensino Fundamental">Ensino Superior Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Superior Completo</option>
+                            <option value="Ensino Fundamental">Pós-Graduação</option>
+                            </option>
+                        </td>
+                        <td><input type="text" class="form-control" id="renda5" style="max-width:100px;"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" id="nome6"></td>
+                        <td><input type="text" class="form-control" id="idade6" style="max-width:50px;"></td>
+                        <td><input type="text" class="form-control" id="parentesco6"></td>
+                        <td><input type="text" class="form-control" id="profissional6"></td>
+                        <td>
+                          <select class="custom-select" id="escolaridade6">
+                            <option value="Ensino Fundamental">Sem Escolaridade</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Fundamental Completo</option>
+                            <option value="Ensino Fundamental">Ensino Médio Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Médio Completo</option>
+                            <option value="Ensino Fundamental">Ensino Superior Incompleto</option>
+                            <option value="Ensino Fundamental">Ensino Superior Completo</option>
+                            <option value="Ensino Fundamental">Pós-Graduação</option>
+                            </option>
+                        </td>
+                        <td><input type="text" class="form-control" id="renda6" style="max-width:100px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+<br>
+                    <div id="button">
+<button type="submit" class="btn gradbt">Cadastrar</button>
+</div>
+</form>
+<br>
+</div>
+<br>
+</body>
+</html>
